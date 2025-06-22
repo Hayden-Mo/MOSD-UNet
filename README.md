@@ -125,7 +125,7 @@ albumentations                                        0.5.0
 	└── ReadMe.md                                    // Introduction
 	
 	使用说明
-	1) Run acrh.py after the needed pkgs are all installed.
+	1) Run train.py after the needed pkgs are all installed.
 	
 	2) [init]
 	   
