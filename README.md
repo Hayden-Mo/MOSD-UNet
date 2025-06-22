@@ -7,19 +7,19 @@ Research on Scratch Defect Segmentation of Steel Surfaces Using MOSD-UNet Within
 # 环境依赖
 Deep Learning Toolkit	                                PyTorch 2.7.0+cu118
 
-Computer Vision Toolkit                                 OpenCV-Python 4.11.0.86
+Computer Vision Toolkit                               OpenCV-Python 4.11.0.86
 
-python                                         3.10.13
+python                                                3.10.13
 
-pandas                                         2.2.3
+pandas                                                2.2.3
 
-albumentations                                 0.5.0
+albumentations                                        0.5.0
 
 # 目录结构描述
 
-├── input                // The dataset
+├── input                                         // The dataset
 
-│   ├── neu_A           // Labeled image dataset
+│   ├── neu_A                                    // Labeled image dataset
 
 │   │   ├── train  
 
@@ -47,7 +47,7 @@ albumentations                                 0.5.0
 
 
 
-│   ├── neu           // Image dataset without labels for model prediction
+│   ├── neu                                    // Image dataset without labels for model prediction
 
 │   │   ├── images
 
@@ -61,7 +61,7 @@ albumentations                                 0.5.0
 │   │   │   │   ├── "00xxxx.png"
 
 
-│   ├── neu_mix           // Labeled image dataset and Image dataset without labels for model prediction are mixed for training
+│   ├── neu_mix                                    // Labeled image dataset and Image dataset without labels for model prediction are mixed for training
 
 │   │   ├── train  
 
@@ -89,11 +89,11 @@ albumentations                                 0.5.0
 
 
 
-├── models                          // The model
+├── models                                                   // The model
 
 │   ├── neu_xxx_UNet_xxx_wods
 
-│   │   ├── bestmodel.pth          //model best {weights}.pt
+│   │   ├── bestmodel.pth                                   //model best {weights}.pt
 
 │   │   ├── config.yml
 
@@ -101,7 +101,7 @@ albumentations                                 0.5.0
 
 │   │   ├── log.csv
 
-├── outputs                         // The model
+├── outputs                                                  // The model
 
 │   ├── neu_xxx_UNet_xxx_wods
 
@@ -110,28 +110,28 @@ albumentations                                 0.5.0
 │   │   │   ├── "00xxxx.png"
 
 
-├── archs.py            // The MOSD-UNet model written in python
+├── archs.py                                     // The MOSD-UNet model written in python
 
-├── losses.py           // The loss function written in python
+├── losses.py                                    // The loss function written in python
 
-├── metrics.py          // The iou_score/dice_coef/precision_recall_f1  written in python
+├── metrics.py                                   // The iou_score/dice_coef/precision_recall_f1  written in python
 
-├── train.py            // The train written in python
+├── train.py                                     // The train written in python
 
-├── utils.py            // some {utilities}.py
+├── utils.py                                     // some {utilities}.py
 
-├── val.py              // Verify the metrics of the current model
+├── val.py                                       // Verify the metrics of the current model
 
-└── ReadMe.md           // Introduction
+└── ReadMe.md                                    // Introduction
 
 使用说明
 1) Run acrh.py after the needed pkgs are all installed.
 
 2) [init]
    
-       指定参数：
-       --dataset dsb2018_96       //Specifying a Dataset
-       --arch NestedUNet          //Specify training model
+       指定参数：                         
+       --dataset dsb2018_96                                //Specifying a Dataset
+       --arch NestedUNet                                   //Specify training model
        """
 
 4) [Exit]: exit() in the python script.
