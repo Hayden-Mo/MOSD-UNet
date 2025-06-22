@@ -123,3 +123,19 @@ albumentations                                 0.5.0
 ├── val.py              // Verify the metrics of the current model
 
 └── ReadMe.md           // Introduction
+
+使用说明
+1) Run acrh.py after the needed pkgs are all installed.
+
+2) [init]
+   
+       指定参数：
+       --dataset dsb2018_96       //Specifying a Dataset
+       --arch NestedUNet          //Specify training model
+       """
+
+4) [Exit]: exit() in the python script.
+
+5) [Detect]
+    1. start the val.py to predict;
+    2. stop predict;
