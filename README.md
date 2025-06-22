@@ -19,6 +19,75 @@ albumentations                                 0.5.0
 
 ├── input                // The dataset
 
+│   ├── neu_A           // Labeled image dataset
+
+│   │   ├── train  
+
+│   │   │   ├── images
+
+│   │   │   │   ├── "00xxxx.jpg"
+
+│   │   │   ├── masks
+
+│   │   │   │   ├── 0
+
+│   │   │   │   │   ├── "00xxxx.png"
+
+│   │   ├── val  
+
+│   │   │   ├── images
+
+│   │   │   │   ├── "00xxxx.jpg"
+
+│   │   │   ├── masks
+
+│   │   │   │   ├── 0
+
+│   │   │   │   │   ├── "00xxxx.png"
+
+
+
+│   ├── neu           // Image dataset without labels for model prediction
+
+│   │   ├── images
+
+│   │   │   ├── "00xxxx.jpg"
+
+
+│   │   ├── masks
+
+│   │   │   ├── 0
+
+│   │   │   │   ├── "00xxxx.png"
+
+
+│   ├── neu_mix           // Labeled image dataset and Image dataset without labels for model prediction are mixed for training
+
+│   │   ├── train  
+
+│   │   │   ├── images
+
+│   │   │   │   ├── "00xxxx.jpg"
+
+│   │   │   ├── masks
+
+│   │   │   │   ├── 0
+
+│   │   │   │   │   ├── "00xxxx.png"
+
+│   │   ├── val  
+
+│   │   │   ├── images
+
+│   │   │   │   ├── "00xxxx.jpg"
+
+│   │   │   ├── masks
+
+│   │   │   │   ├── 0
+
+│   │   │   │   │   ├── "00xxxx.png"
+
+
 
 ├── models                          // The model
 
